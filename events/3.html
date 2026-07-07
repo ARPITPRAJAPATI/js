@@ -21,9 +21,10 @@ function sayDate(str) {
 }
 
 document.querySelector("#start").addEventListener("click", function () {
-
-    intervalId = setInterval(sayDate, 1000, "Hi");
-
+    
+    if(!intervalId){intervalId = setInterval(sayDate, 1000, "Hi");
+}
+    
 });
 
 document.querySelector("#stop").addEventListener("click", function () {
