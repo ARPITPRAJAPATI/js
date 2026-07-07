@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Something about life</h1>
+    <button id="btn">Click me</button> 
+</body>
+<script>
+    const sayarush = function(){
+        document.querySelector('h1').innerHTML = "best of luck "
+    }
+
+    const changeme = setTimeout(sayarush,1000);
+   
+    document.querySelector('#btn').
+    addEventListener('click' , function(){
+        clearTimeout(changeme);
+        console.log("stopped")
+    })
+</script>
+</html>
