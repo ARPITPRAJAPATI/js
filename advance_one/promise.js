@@ -31,7 +31,7 @@ promise1.then(function(user){
     console.log(user);
 })/
 
-const promise1 = new Promise(function(resolve,reject){
+// const promise1 = new Promise(function(resolve,reject){
     setTimeout(function(){
         let error = true;
         if(!error){
@@ -42,7 +42,7 @@ const promise1 = new Promise(function(resolve,reject){
         }
     },1000)
     
-})
+// })
 
 promise1.then(function(user){
     console.log(user);
